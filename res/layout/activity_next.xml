@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nextActivity">
+
+    <TextView
+        android:id="@+id/textCikti"
+        android:layout_width="307dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="32dp"
+        android:text="   0"
+        android:textSize="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnArt"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:text="+"
+        android:textSize="30dp"
+        android:onClick="SayiArt"
+        app:layout_constraintStart_toStartOf="@+id/textCikti"
+        app:layout_constraintTop_toBottomOf="@+id/textCikti" />
+
+    <Button
+        android:id="@+id/btnAzal"
+        android:layout_width="100dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="76dp"
+        android:text="-"
+        android:textSize="30dp"
+        android:onClick="SayiAzalt"
+        app:layout_constraintEnd_toEndOf="@+id/textCikti"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toEndOf="@+id/btnArt"
+        app:layout_constraintTop_toBottomOf="@+id/textCikti" />
+</androidx.constraintlayout.widget.ConstraintLayout>
